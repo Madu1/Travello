@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Destination</title>
+
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <h1>Destinations....</h1>
+    {% else %}
+    {% for message in messages %}
+    <h1>{{message}}</h1>
+    {% endfor %}
+    {% endif %}
+
+
+
+
+
+
+
+
+</body>
+</html>
